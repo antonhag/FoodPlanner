@@ -1,0 +1,43 @@
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 260px;
+    gap: 1rem;
+  }
+  
+  .sidebar-left {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+  }
+
+  .hero {
+    height: 260px;
+    background-image: url("../images/foodheader.jpg"); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  
+  .hero h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  #ingredientList {                                                                                         
+    position: absolute;                                                                                   
+    background: white;                                                                                    
+    border: 1px solid #ccc;                                                                               
+    max-height: 200px;                                                                                    
+    overflow-y: scroll;                                                                                   
+    width: 200px;                                                                                         
+}
