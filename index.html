@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Planner</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:
+    wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="site-header"></header>
@@ -18,8 +20,21 @@
                 <input id="dishName" name="dishName" type="text" placeholder="T.ex. Kycklinggryta" required>
                 <button type="submit">Skapa</button>
               </form>
+              <div id="chosenIngredients"></div>
+              <div id="total-macros">
+              </div>
+              
         </main>
-        <aside class="sidebar-right"></aside>
+        <aside class="sidebar-right">
+            <form>
+                <label for="proteinGoal">Dagligt intag av protein</label>
+                <input type="number" name="proteinGoal" id="proteinGoal"><br>
+                <label for="caloriesGoal">Dagligt intag av kalorier</label>
+                <input type="number" name="caloriesGoal" id="caloriesGoal"><br>
+                <button type="button" id="goalButton">Sätt mål</button>
+                <div id="sidebar-right-goals"></div>
+            </form>
+        </aside>
     </div>
     <footer id="site-footer"></footer>
     <script src="script/menu.js"></script>

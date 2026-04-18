@@ -1,15 +1,21 @@
+body {
+    background-color: #f5f0e8;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
 .layout {
     display: grid;
     grid-template-columns: 220px 1fr 260px;
     gap: 1rem;
+    min-height: 100vh;
+    align-items: stretch;
   }
   
-  .sidebar-left {
-    position: sticky;
-    top: 1rem;
-    align-self: start;
-  }
-
   .hero {
     height: 260px;
     background-image: url("../images/foodheader.jpg"); 
@@ -40,4 +46,85 @@
     max-height: 200px;                                                                                    
     overflow-y: scroll;                                                                                   
     width: 200px;                                                                                         
+}
+
+.sidebar-left, .sidebar-right  {
+  background-color: #2d4a2d; 
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+#menu {
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+  background-color: #e07a30;
+  display: block;
+  padding: 10px 15px;
+  align-content: center;
+  border-radius: 6px;
+  max-width: 160px;
+  margin: auto;
+}
+
+#menu a:hover {
+  background-color: #c06520;
+  color: black;
+}
+
+.sidebar-right button {
+  background-color: #e07a30;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.sidebar-right button:hover {
+  background-color: #c06520;
+  color: black;
+}
+
+.sidebar-right label {
+  color: white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.sidebar-right input {
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.sidebar-right button {
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+#sidebar-right-goals {
+  color: white;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.8;
 }
