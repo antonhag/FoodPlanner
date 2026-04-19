@@ -1,44 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Planner</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:
-    wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:
+    wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header id="site-header"></header>
     <div class="layout">
-        <aside class="sidebar-left">
-            <ul id="menu"></ul>
-        </aside>
-        <main class="main-content">
-            <form id="dishForm">
-                <label for="dishName">Skapa ny maträtt</label>
-                <input id="dishName" name="dishName" type="text" placeholder="T.ex. Kycklinggryta" required>
-                <button type="submit">Skapa</button>
-              </form>
-              <div id="chosenIngredients"></div>
-              <div id="total-macros">
+      <aside class="sidebar-left">
+        <ul id="menu"></ul>
+      </aside>
+      <main class="main-content">
+        <div class="week-grid">
+            <div class="day-column" data-day="måndag">
+                <h2>Måndag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
               </div>
-              
-        </main>
-        <aside class="sidebar-right">
-            <form>
-                <label for="proteinGoal">Dagligt intag av protein</label>
-                <input type="number" name="proteinGoal" id="proteinGoal"><br>
-                <label for="caloriesGoal">Dagligt intag av kalorier</label>
-                <input type="number" name="caloriesGoal" id="caloriesGoal"><br>
-                <button type="button" id="goalButton">Sätt mål</button>
-                <div id="sidebar-right-goals"></div>
-            </form>
-        </aside>
+              <div class="day-column" data-day="tisdag">
+                <h2>Tisdag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="day-column" data-day="onsdag">
+                <h2>Onsdag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="day-column" data-day="torsdag">
+                <h2>Torsdag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="day-column" data-day="fredag">
+                <h2>Fredag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="day-column" data-day="lördag">
+                <h2>Lördag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="day-column" data-day="söndag">
+                <h2>Söndag</h2>
+                <div class="meals-row">
+                  <div class="meal-section" data-meal="frukost">
+                    <h3>Frukost</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="lunch">
+                    <h3>Lunch</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                  <div class="meal-section" data-meal="middag">
+                    <h3>Middag</h3>
+                    <button type="button" class="add-dish-btn">Lägg till måltid</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </main>
+      <aside class="sidebar-right">
+        <form>
+          <label for="proteinGoal">Dagligt intag av protein</label>
+          <input type="number" name="proteinGoal" id="proteinGoal" /><br />
+          <label for="caloriesGoal">Dagligt intag av kalorier</label>
+          <input type="number" name="caloriesGoal" id="caloriesGoal" /><br />
+          <button type="button" id="goalButton">Sätt mål</button>
+          <div id="sidebar-right-goals"></div>
+        </form>
+      </aside>
     </div>
     <footer id="site-footer"></footer>
     <script src="script/menu.js"></script>
     <script src="script/layout.js"></script>
     <script src="script/dish.js"></script>
-</body>
+  </body>
 </html>
+
